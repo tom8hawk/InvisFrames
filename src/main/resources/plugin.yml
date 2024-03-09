@@ -4,13 +4,14 @@ main: de.rusticprism.invisframes.SurvivalInvisFrames
 api-version: 1.19
 load: STARTUP
 authors: [ RusticPrism, Techdoodle ]
+
 commands:
-  commands:
-    iframe:
-      permission: survivalinvisiframes.cmd
-      description: Gives the player an invisible item frame
-      usage: /iframe
-  permissions:
+  iframe:
+    permission: survivalinvisiframes.cmd
+    description: Gives the player an invisible item frame
+    usage: /iframe
+
+permissions:
     survivalinvisiframes.place:
       default: true
     survivalinvisiframes.craft:

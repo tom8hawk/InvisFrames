@@ -14,9 +14,9 @@ import java.util.Collections;
 import java.util.List;
 
 public class InvisiFramesCommand implements CommandExecutor, TabCompleter {
-    private final SurvivalInvisiFrames survivalInvisiframes;
+    private final SurvivalInvisFrames survivalInvisiframes;
 
-    public InvisiFramesCommand(SurvivalInvisiFrames survivalInvisiframes) {
+    public InvisiFramesCommand(SurvivalInvisFrames survivalInvisiframes) {
         this.survivalInvisiframes = survivalInvisiframes;
     }
 
@@ -97,7 +97,7 @@ public class InvisiFramesCommand implements CommandExecutor, TabCompleter {
         }
 
         Player player = (Player) sender;
-        player.getInventory().addItem(SurvivalInvisiFrames.generateInvisibleItemFrame());
+        player.getInventory().addItem(SurvivalInvisFrames.generateInvisibleItemFrame());
         player.sendMessage(ChatColor.GREEN + "Added an invisible item frame to your inventory");
     }
 }
